@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(wA/tropical-green-leaves-background\ \(1\).jpg);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+header {
+    font: bolder;
+    backdrop-filter: blur(8px);
+    color: black;
+    padding: 20px;
+}
+
+
+footer {
+    background-color:wheat;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.newsletter {
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    align-items: center;
+    color:white;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2.3em;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+.result-section {
+    background-color: transparent;
+    color: white;
+    background-blend-mode: color;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.result-title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.result-message {
+    font-size: 1.2em;
+}
+
+.result-details {
+    margin-top: 15px;
+}
+
+.facility-info {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.gmaps-link {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the background color and opacity */
+    backdrop-filter: blur(8px); /* Adjust the blur amount */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+  .shadow-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 5em; /* Adjust font size */
+    font-weight: bold; /* Make it bold */
+    font-family: 'Times New Roman', Times, serif;
+    backdrop-filter: blur(8px);  /* Set font family to Times New Roman */
+    /* Additional styles like padding can be applied here */
+  }
+  @keyframes color-change {
+    0% { color: #ff0000; }
+    50% { color: #00ff00; }
+    100% { color: #0000ff; }
+  }
+
+  .animated-title {
+    animation: color-change 3s infinite;
+    font-size: 3em; /* Adjust font size */
+    font-weight: bold; /* Make it bold */
+    /* Additional styles like font-family or padding can be applied here */
+  }
+.p{
+    color:greenyellow;
+    font-size:xx-large;
+}
+.sa{
+    color: darkkhaki;
+    font-size: 150%;
+}
+.sss{
+    color: white;
+}
+.h{
+    color:aliceblue;
+}
+.na{
+    color: purple;
+}
+.navbar-toggler{
+    backdrop-filter: blur(8px);
+}

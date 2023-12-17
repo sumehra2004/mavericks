@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediMap - Results</title>
+    <!-- Add the Google Maps API script with your API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            // Fetch Hyderabad locations from the backend
+            fetch('/hyderabad-locations')
+                .then(response => response.json())
+                .then(locations => {
+                    // Create a map centered around the first location
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        center: { lat: locations[0].lat, lng: locations[0].lng },
+                        zoom: 12
+                    });
+
+                    // Add markers for each location
+                    locations.forEach(location => {
+                        var marker = new google.maps.Marker({
+                            position: { lat: location.lat, lng: location.lng },
+                            map: map,
+                            title: location.name
+                        });
+                    });
+                })
+                .catch(error => console.error('Error fetching Hyderabad locations:', error));
+        }
+    </script>
+</head>
+<body>
+    <h1>Results for {{ location }}</h1>
+    <div id="map" style="height: 400px;"></div>
+    {% if brands %}
+        <ul>
+            {% for brand in brands %}
+                <li>{{ brand }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No data available for this location.</p>
+    {% endif %}
+</body>
+</html>

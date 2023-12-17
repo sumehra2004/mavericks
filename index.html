@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDI-MAP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="st.css">
+    <script src="j.js"></script>
+</head>
+<body >
+    <h1 class="animated-title">MEDI MAP</h1>
+
+
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/dabbxnlzp/image/upload/v1702793085/th_c4wxaa.jpg" alt="Bootstrap" width="30" height="24">
+              </a>
+            <a class="na" href="./index.html">MEDICARE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./in.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact us</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Login/Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <p class="p"><span class="sa">W</span>ELCOME TO FUTURE <span class="sa">M</span>EDICINE</p>
+
+<section class="newsletter">
+    <h2>Enter Location</h2>
+    <p>Input your location below to find medicine Brands in your location:</p>
+    <form onsubmit="findFacilities(); return false;">
+        <div class="form-group">
+            <label for="location">Location</label>
+            <select class="form-control" id="location">
+                <option value="kukatpally">Kukatpally</option>
+                <option value="ameerpet">Ameerpet</option>
+                <option value="secunderabad">Secunderabad</option>
+                <option value="banjarahills">Banjara Hills</option>
+                <option value="madhapur">Madhapur</option>
+                <option value="tolichowki">Tolichowki</option>
+                <option value="dilsukhnagar">Dilsukhnagar</option>
+                <option value="uppal">Uppal</option>
+                <option value="malakpet">Malakpet</option>
+                <option value="kondapur">Kondapur</option>
+                <option value="gachibowli">Gachibowli</option>
+                <option value="nampally">Nampally</option>
+                <option value="begumpet">Begumpet</option>
+                <option value="charminar">Charminar</option>
+                <option value="lakdikapul">Lakdikapul</option>
+                <option value="kothapet">Kothapet</option>
+                <option value="begumbazaar">Begum Bazaar</option>
+                <option value="attapur">Attapur</option>
+                <option value="somajiguda">Somajiguda</option>
+                <option value="narayanguda">Narayanguda</option>
+                <option value="karkhana">Karkhana</option>
+                <option value="chandanagar">Chandanagar</option>
+                <option value="himayatnagar">Himayatnagar</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Find Brands</button>
+    </form>
+    
+    
+
+    <div id="result-container"></div>
+</section>
+
+
+
+<footer>
+    &copy; 2023 HACK MAVERICKS
+</footer>
+
+
+
+
+
+</body>
+</html> 
